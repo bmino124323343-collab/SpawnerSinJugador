@@ -1,0 +1,34 @@
+# Límite de spawners automáticos registrados. Mantenerlo bajo reduce consumo de recursos.
+max-player-spawners: 20
+
+# Máximo de chunks que el plugin mantendrá cargados. Reducirlo disminuye el uso de RAM/CPU.
+max-forced-chunks: 8
+
+# Intervalo entre ciclos de generación: 20 ticks = 1 segundo.
+interval-ticks: 20
+
+# Un intento por spawner procesado en cada ciclo: como máximo 1 criatura por segundo y spawner elegible.
+spawn-attempts: 1
+
+# Procesa hasta 20 spawners por segundo; se rota el orden si hay más.
+max-spawners-per-cycle: 20
+
+# Límite global de generación por segundo; 20 permite una por segundo para cada uno de hasta 20 spawners.
+max-total-spawns-per-cycle: 20
+
+# Límite global aproximado de criaturas gestionadas por el plugin (20 spawners x 60).
+# Evita acumulación ilimitada si las criaturas se alejan de su spawner.
+max-managed-mobs: 1200
+
+# Máximo de 60 criaturas del mismo tipo en un radio de 16 bloques de cada spawner. Es un límite local por tipo, no un contador histórico de todas las criaturas que hayan salido de ese spawner.
+nearby-mob-cap: 60
+
+# Radio de aparición alrededor del spawner (máximo permitido: 8).
+spawn-range: 4
+
+# Mostrar eventos de registro y eliminación en consola.
+verbose-log: false
+
+# Gestionados automáticamente. No editar manualmente.
+player-spawners: []
+plugin-forced-chunks: []

@@ -1,0 +1,15 @@
+name: SpawnerSinJugador
+version: ${project.version}
+main: cl.servidor.spawnersinjugador.SpawnerSinJugador
+description: Simula generación para spawners colocados por jugadores sin exigir jugadores cercanos.
+author: ChatGPT
+api-version: '${plugin.api.version}'
+commands:
+  spawnersj:
+    description: Abre el panel de ajustes del spawner cercano.
+    usage: /spawnersj
+    permission: spawnersj.admin
+permissions:
+  spawnersj.admin:
+    description: Permite consultar y configurar los spawners registrados.
+    default: op
